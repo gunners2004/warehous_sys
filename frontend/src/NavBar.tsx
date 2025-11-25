@@ -1,5 +1,5 @@
 
-// 3. Навигационная панель
+
 const NavBar = ({ currentView, onViewChange }: { currentView: string, onViewChange: (view: string) => void }) => {
     return (
         <div className="nav-bar">

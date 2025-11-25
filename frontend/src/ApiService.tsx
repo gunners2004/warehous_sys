@@ -1,7 +1,6 @@
 
 const api = {
     getProducts: async (): Promise<Product[]> => {
-        // Имитация задержки сети
         await new Promise(resolve => setTimeout(resolve, 500));
         const data = localStorage.getItem('product_db_react');
         return data ? JSON.parse(data) : [];
@@ -15,7 +14,6 @@ const api = {
             description
         };
 
-        // Получаем текущие, добавляем новый, сохраняем
         const currentData = localStorage.getItem('product_db_react');
         const products = currentData ? JSON.parse(currentData) : [];
         products.push(newProduct);

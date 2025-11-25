@@ -11,7 +11,6 @@ class ProductController {
 
     private final List<Product> productList = new ArrayList<>();
 
-    // GET: Retrieve all products
     @GetMapping
     public List<Product> getAllProducts() {
         return productList;

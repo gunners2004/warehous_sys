@@ -1,5 +1,5 @@
 
-// 1. Компонент Списка Продуктов
+
 const ProductList = ({ products, isLoading }: { products: Product[], isLoading: boolean }) => {
     if (isLoading) {
         return <div className="empty-state">Loading products... ⏳</div>;
